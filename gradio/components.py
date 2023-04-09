@@ -473,6 +473,8 @@ class Textbox(
         visible: bool | None = None,
         interactive: bool | None = None,
         type: str | None = None,
+        elem_id: str | None = None,
+        elem_classes: str | None = None,
     ):
         return {
             "lines": lines,
@@ -484,6 +486,8 @@ class Textbox(
             "value": value,
             "type": type,
             "interactive": interactive,
+            "elem_id": elem_id,
+            "elem_classes": elem_classes,
             "__type__": "update",
         }
 
